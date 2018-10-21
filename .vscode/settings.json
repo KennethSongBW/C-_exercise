@@ -20,5 +20,8 @@
         {},
         {}
     ],
-    "background.useFront": false
+    "background.useFront": false,
+    "files.associations": {
+        "ostream": "cpp"
+    }
 }
