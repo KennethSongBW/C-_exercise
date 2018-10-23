@@ -22,6 +22,7 @@
     ],
     "background.useFront": false,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cstring": "cpp"
     }
 }
