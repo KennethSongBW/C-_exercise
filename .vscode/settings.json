@@ -24,5 +24,6 @@
     "files.associations": {
         "ostream": "cpp",
         "cstring": "cpp"
-    }
+    },
+    "C_Cpp.dimInactiveRegions": false
 }
