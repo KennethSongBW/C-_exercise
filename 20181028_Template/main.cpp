@@ -20,9 +20,17 @@ T getMax(T *a, int n)
     //     if (a[i] > max) max = a[i];
     // }
 
-    for (int i = 0; i < sizeof(a)/sizeof(int); i++)
+    // cout << sizeof(a) << " " << sizeof(int) << endl;
+
+    // for (int i = 0; i < sizeof(a)/sizeof(int); i++)
+    // {
+    //     if (a[i] > max) max = a[i];
+    // }
+
+    while (*a)
     {
-        if (a[i] > max) max = a[i];
+        if (*a > max) max = *a;
+        a = a + 1;
     }
     
     return max;
@@ -34,7 +42,7 @@ int main()
     cout << a << endl;
     double b = getSquare(1.2);
     cout << b << endl;
-    int c[3] = {0,1,2};
+    int c[3] = {1,2,3};
     int d = getMax(c, 3);
     cout << d << endl;
     return 0;
