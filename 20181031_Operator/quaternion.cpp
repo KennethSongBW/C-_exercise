@@ -1,6 +1,4 @@
 #include "quaternion.h"
-#include <iostream>
-#include <cmath>
 
 namespace Angle
 {
@@ -40,6 +38,11 @@ void quaternion::normlize()
     x /= n;
     y /= n;
     z /= n;
+}
+
+std::ostream & operator<< (std::ostream & os, const quaternion &q)
+{
+    std::cout << q.w;
 }
 
 }

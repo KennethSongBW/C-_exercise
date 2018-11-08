@@ -10,5 +10,6 @@ int main()
     Angle::quaternion q3 = q1 + q2;
     q3.normlize();
     cout << q3.getW() << " " << q3.getX() << " " << q3.getY() << " " << q3.getZ() << endl;
+    cout << q3 << endl;
     return 0;
 }

@@ -1,3 +1,8 @@
+#ifndef QUATERNION_H_
+#define QUATERNION_H_
+
+#include <iostream>
+#include <cmath>
 namespace Angle
 {
 class quaternion
@@ -11,6 +16,7 @@ public:
     ~quaternion();
     //double toAngle();
     quaternion operator+(quaternion &another);
+    friend std::ostream & operator<< (std::ostream & os, const quaternion & q);
     //quaternion operator*(quaternion &another);
     double getNorm();
     void normlize();
@@ -25,3 +31,4 @@ public:
 };
 
 }
+#endif
